@@ -17,7 +17,7 @@ class Capshift < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/njreid/dualie/releases/download/capshift-v#{version}/capshift-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "977898ddb34e9425a80b678a41b477918d0ba6f3523be3449a5f9af4e72709d2"
     else
       odie "capshift only supports Apple Silicon (arm64) Macs"
     end

@@ -12,12 +12,12 @@
 class Capshift < Formula
   desc "Caps-lock chord shortcut daemon for macOS — app launch/focus and key remaps"
   homepage "https://github.com/njreid/dualie"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/njreid/dualie/releases/download/capshift-v#{version}/capshift-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "977898ddb34e9425a80b678a41b477918d0ba6f3523be3449a5f9af4e72709d2"
+      sha256 "08fbb200d57dccadc4e1a1b4944052f66c541349e45dcc571b8e5d3b90de090e"
     else
       odie "capshift only supports Apple Silicon (arm64) Macs"
     end
